@@ -20,12 +20,14 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
 
                 Intent intent = new Intent(SplashActivity.this, MusicActivity.class);
+                intent.putExtra("Departure", SplashActivity.class.toString());
+                SplashActivity.this.overridePendingTransition(0,0);
                 startActivity(intent);
             }
         };
 
         Timer timer = new Timer();
-        timer.schedule(task, 3000);
+        timer.schedule(task, 4000);
 
     }
 }
