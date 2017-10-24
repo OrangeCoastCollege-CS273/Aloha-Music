@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aloha Music</string>
+    <string name="splash_screen_text">Sounds of Hawai\'i</string>
+    <string name="ukulele_image_alt_text">Hawaiian Ukulele</string>
+    <string name="ipu_image_alt_text">Hawaiian Ipu</string>
+    <string name="hula_image_alt_text">Hawaiian Hula</string>
+    <string name="ukulele_button_play_text">Play Ukulele Song</string>
+    <string name="ukulele_button_pause_text">Pause Ukulele Song</string>
+    <string name="ipu_button_play_text">Play Ipu Song</string>
+    <string name="ipu_button_pause_text">Pause Ipu Song</string>
+    <string name="hula_button_watch_text">Watch Hula Video</string>
+    <string name="hula_button_pause_text">Pause Hula Video</string>
+</resources>

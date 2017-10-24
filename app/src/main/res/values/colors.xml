@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="hawaiian_earth">#964b00</color>
+    <color name="dark_hawaiian_earth">#7D3200</color>
+    <color name="jungle_green">#347c2c</color>
+    <color name="turquoise_water">#4dbdb8</color>
+    <color name="dark_turquoise_water">#00706b</color>
+
+</resources>
