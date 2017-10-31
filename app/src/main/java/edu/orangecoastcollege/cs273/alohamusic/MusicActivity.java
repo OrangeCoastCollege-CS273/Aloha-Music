@@ -10,6 +10,10 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+/**
+ * Activity that allows the user to play media from three available sources
+ *
+ */
 public class MusicActivity extends AppCompatActivity {
 
     private static final String TAG = "AlohaMusic";
@@ -23,6 +27,18 @@ public class MusicActivity extends AppCompatActivity {
     MediaPlayer ukuleleMediaPlayer;
     MediaPlayer ipuMediaPlayer;
 
+    /**
+     * Called when the activity is starting
+     *
+     * Connects views to their programmatic counterpart
+     *
+     * Creates {@link MediaPlayer}s for the two audio sources
+     * Creates a {@link MediaController} for the {@link VideoView}
+     *
+     * Connects the video to the {@link VideoView} via {@link Uri}
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +63,13 @@ public class MusicActivity extends AppCompatActivity {
         videoView.setMediaController(new MediaController(this));
     }
 
+    /**
+     * Based on what {@link View} called this method,
+     * plays the respective multimedia, hides other buttons
+     * , and allows for the pausing of the currently played media.
+     *
+     * @param v Clicked button
+     */
     public void playMedia(View v) {
         switch (v.getId()) {
             case (R.id.ukuleleButton):
@@ -94,6 +117,9 @@ public class MusicActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Releases the media players when the activity is stopped
+     */
     @Override
     protected void onStop() {
         super.onStop();
